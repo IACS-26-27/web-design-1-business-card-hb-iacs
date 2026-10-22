@@ -9,24 +9,49 @@ h4,
 h5,
 h6 {
   margin-block: 0;
+  color: white;
 }
 
-.card-border {
-  height: auto;
-  margin:10px;
-  border: 2px solid red;
-}
-
-.card-border:after {
-  content: " ";
-  bottom: 0;
-}
 /* Your box model card styles go here!
  * Layout with margin, padding, border, width, and height only
  * (no flexbox or grid). */
 
+.card-front {
+  background: radial-gradient(rgb(237, 2, 2), rgb(255, 213, 2), rgb(253, 101, 0), rgb(71, 0, 0));
+  overflow: hidden;
+}
 
+.star-parent {
+  display: grid;
+  align-content: center;
+  height: 185px;
+  border: 3px solid blue;
+}
 
- .tiny-slogan {
-  font-size: 100%;
- }
+.gradient-star {
+  background: rgb(34, 34, 34);
+  left: -30px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform: rotate(15deg);
+}
+
+.gradient-star:before,
+.gradient-star:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  background: rgb(34, 34, 34);
+}
+
+.gradient-star:before {
+  transform: rotate(30deg);
+}
+
+.gradient-star:after {
+  transform: rotate(60deg);
+}
