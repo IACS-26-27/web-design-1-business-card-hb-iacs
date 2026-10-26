@@ -30,7 +30,8 @@ h6 {
 
 .gradient-star {
   background: rgb(34, 34, 34);
-  left: -30px;
+  top: -9px;
+  left: 0px;
   width: 200px;
   height: 200px;
   position: relative;
@@ -54,4 +55,13 @@ h6 {
 
 .gradient-star:after {
   transform: rotate(60deg);
+}
+
+.cool-box-thing-becuase-the-star-was-slightly-too-big-and-left-room-on-the-left {
+  background: rgb(34, 34, 34);
+  top: 0px;
+  left: -20px;
+  width: 200px;
+  height: 400px;
+  transform: rotate(0deg);
 }
