@@ -17,24 +17,37 @@ h6 {
  * (no flexbox or grid). */
 
 .card-front {
-  background: radial-gradient(rgb(237, 2, 2), rgb(255, 213, 2), rgb(253, 101, 0), rgb(71, 0, 0));
-  overflow: hidden;
+  position: relative;
+  width: 100%
+}
+
+.star-parent:before {
+  content: "";
+  background-image: url(./images/gradient-background-1518905121h9H.jpg);
+  background-size: cover;
+  transform: rotate(-90deg);
+  z-index: -1;
+  top: -3px;
+  height: px;
+  width: 100%;
+  position: absolute;
+  transform-origin: center center;
 }
 
 .star-parent {
-  display: grid;
-  align-content: center;
-  height: 185px;
-  border: 3px solid blue;
+  height: 190px;
+  position: relative;
+  overflow: hidden;
 }
 
 .gradient-star {
   background: rgb(34, 34, 34);
-  left: -30px;
+  left: -20px;
   width: 200px;
   height: 200px;
   position: relative;
   transform: rotate(15deg);
+  top: -7px;
 }
 
 .gradient-star:before,
